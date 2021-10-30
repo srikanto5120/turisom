@@ -1,0 +1,69 @@
+[
+   
+         {   "key":101,
+        "start":5,
+        
+        "name":"CITIZEN HOTEL",
+        "img":"https://i.ibb.co/2sr2d2w/citizen.jpg",
+        "price":25,
+        "discription":" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo cupkeyitate nulla repudiandae porro, quas at quibusdam modi architecto vero, ut labore quasi ab repellendus, neque atque possimus. Aliquam minima fugit sit qukeyem, atque deserunt officia dolores eligendi dolor sint voluptates nihil aspernatur quae unde veniam voluptas rem quaerat! Quibusdam, quia?",
+        "like":230,
+        "comment":210
+    },
+   
+         {   "key":101,
+        "start":4.4,
+        
+        "name":"CIVILIAN HOTEL ",
+        "img":"https://i.ibb.co/BV24SwP/civilian.jpg",
+        "price":30,
+        "discription":" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo cupkeyitate nulla repudiandae porro, quas at quibusdam modi architecto vero, ut labore quasi ab repellendus, neque atque possimus. Aliquam minima fugit sit qukeyem, atque deserunt officia dolores eligendi dolor sint voluptates nihil aspernatur quae unde veniam voluptas rem quaerat! Quibusdam, quia?",
+        "like":210,
+        "comment":100
+    },
+   
+         {   "key":101,
+        "start":4.9,
+        
+        "name":"LERENDO HOTEL",
+        "img":"https://i.ibb.co/p2Cdt73/lerando-royal.jpg",
+        "price":35,
+        "discription":" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo cupkeyitate nulla repudiandae porro, quas at quibusdam modi architecto vero, ut labore quasi ab repellendus, neque atque possimus. Aliquam minima fugit sit qukeyem, atque deserunt officia dolores eligendi dolor sint voluptates nihil aspernatur quae unde veniam voluptas rem quaerat! Quibusdam, quia?",
+        "like":200,
+        "comment":110
+    },
+   
+         {   "key":101,
+        "start":4.6,
+        
+        "name":"MIDDLE EIGHT HOTEL",
+        "img":"https://i.ibb.co/BKKdSrF/middle-eight.jpg",
+        "price":40,
+        "discription":" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo cupkeyitate nulla repudiandae porro, quas at quibusdam modi architecto vero, ut labore quasi ab repellendus, neque atque possimus. Aliquam minima fugit sit qukeyem, atque deserunt officia dolores eligendi dolor sint voluptates nihil aspernatur quae unde veniam voluptas rem quaerat! Quibusdam, quia?",
+        "like":330,
+        "comment":220
+    },
+   
+         {   "key":101,
+        "start":4.8,
+        
+        "name":" RESEDIENT HOTEL",
+        "img":"https://i.ibb.co/N9WwL0W/resedient-victoria.jpg",
+        "price":250,
+        "discription":" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo cupkeyitate nulla repudiandae porro, quas at quibusdam modi architecto vero, ut labore quasi ab repellendus, neque atque possimus. Aliquam minima fugit sit qukeyem, atque deserunt officia dolores eligendi dolor sint voluptates nihil aspernatur quae unde veniam voluptas rem quaerat! Quibusdam, quia?",
+        "like":250,
+        "comment":140
+    },
+   
+         {   "key":101,
+        "start":4.5,
+        
+        "name":" THE TOWER",
+        "img":" https://i.ibb.co/2dfDQty/the-tower.jpg",
+        "price":30,
+        "discription":" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo cupkeyitate nulla repudiandae porro, quas at quibusdam modi architecto vero, ut labore quasi ab repellendus, neque atque possimus. Aliquam minima fugit sit qukeyem, atque deserunt officia dolores eligendi dolor sint voluptates nihil aspernatur quae unde veniam voluptas rem quaerat! Quibusdam, quia?",
+        "like":230,
+        "comment":210
+    }
+  
+]

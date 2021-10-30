@@ -1,0 +1,43 @@
+.tour {
+  margin-top: 100px;
+  background-color: #fbf9fa;
+  box-sizing: border-box;
+}
+.city-name {
+  color: #555;
+}
+
+.like {
+  background-color: rgb(247, 221, 56);
+  transition: all 0.3s ease-in-out;
+}
+.like:hover {
+  color: #fff;
+  background-color: blue;
+}
+.price {
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(245, 185, 55);
+}
+.image {
+  display: inline-block;
+}
+figure {
+  overflow: hidden;
+}
+.image img {
+  display: block;
+  cursor: pointer;
+}
+image.zoom-in img {
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+.image .zoom-in:hover img {
+  transform: scale(1.5);
+}
+.days {
+  font-size: 20px;
+  margin-left: 5px;
+}
