@@ -12,7 +12,7 @@ const Booking = () => {
   console.log(singlePlace);
   const { img, name, discription, price, days, start } = singlePlace;
   useEffect(() => {
-    const uri = `http://localhost:5000/place/singlePlace/${id}`;
+    const uri = `https://fierce-everglades-90297.herokuapp.com/place/singlePlace/${id}`;
     console.log(uri);
     fetch(uri)
       .then((res) => res.json())

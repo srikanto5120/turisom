@@ -11,18 +11,21 @@ const BookingInformation = () => {
   console.log(id);
   const { register, handleSubmit } = useForm();
   const onSubmit = (data, e) => {
-    fetch("http://localhost:5000/booking-information", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify(data),
-    })
+    fetch(
+      "https://fierce-everglades-90297.herokuapp.com//booking-information",
+      {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify(data),
+      }
+    )
       .then((res) => res.json())
       .then((data) => setId(data));
     e.target.reset();
   };
 
   useEffect(() => {
-    fetch("http://localhost:5000/booking-information")
+    fetch("https://fierce-everglades-90297.herokuapp.com/booking-information")
       .then((res) => res.json())
       .then((data) => setUserInformation(data));
   }, [id]);

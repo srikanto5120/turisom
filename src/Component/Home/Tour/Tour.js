@@ -9,7 +9,7 @@ import "./Tour.css";
 const Tour = () => {
   const [places, setPlaces] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/places")
+    fetch("https://fierce-everglades-90297.herokuapp.com/places")
       .then((res) => res.json())
       .then((data) => setPlaces(data));
   }, []);

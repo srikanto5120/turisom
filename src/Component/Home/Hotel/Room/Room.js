@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Room = () => {
   const [rooms, setRooms] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/room")
+    fetch("https://fierce-everglades-90297.herokuapp.com/room")
       .then((res) => res.json())
       .then((data) => setRooms(data));
   }, []);

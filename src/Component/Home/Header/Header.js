@@ -7,10 +7,11 @@ import "./Header.css";
 
 const Header = () => {
   const { user, logOut } = useAuth();
+  console.log(user.photoURL);
   console.log(user);
   return (
     <div className="header">
-      <Navbar collapseOnSelect expand="lg" className="menu">
+      <Navbar collapseOnSelect expand="lg" fixed="top" className="menu">
         <Container>
           <Navbar.Brand href="#home"> TOUR</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -20,10 +21,7 @@ const Header = () => {
                 {" "}
                 Home
               </Nav.Link>
-              <Nav.Link as={HashLink} className="link" to="/home#services">
-                {" "}
-                Service
-              </Nav.Link>
+
               <Nav.Link as={HashLink} className="link" to="/home#tour">
                 Tour
               </Nav.Link>
@@ -44,7 +42,8 @@ const Header = () => {
                 className="d-flex align-items-center name me-4  "
               >
                 <p className="ml-2 ">{user.displayName}</p>
-                <img className="user-img" src={user?.photoURL} alt="" />
+
+                <img className="user-img" src={user.photoURL} alt="" />
               </Link>
             ) : (
               <Link to="/home">
