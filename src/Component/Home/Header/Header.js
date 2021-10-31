@@ -1,10 +1,13 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
-
+import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import useAuth from "../../../Hooks/useAuth";
 import "./Header.css";
 
 const Header = () => {
+  const { user, logOut } = useAuth();
+  console.log(user);
   return (
     <div className="header">
       <Navbar collapseOnSelect expand="lg" className="menu">
@@ -35,13 +38,34 @@ const Header = () => {
                 Contact Us
               </Nav.Link>
             </Nav>
+            {user.displayName ? (
+              <Link
+                to="/home"
+                className="d-flex align-items-center name me-4  "
+              >
+                <p className="ml-2 ">{user.displayName}</p>
+                <img className="user-img" src={user?.photoURL} alt="" />
+              </Link>
+            ) : (
+              <Link to="/home">
+                {" "}
+                <img
+                  className="user"
+                  src={"https://i.ibb.co/QXy94Bm/profile-icon-png-893.png"}
+                  alt=""
+                />
+              </Link>
+            )}
             <Nav>
-              <Nav.Link as={HashLink} to="/login" className="link">
-                login
-              </Nav.Link>
-              <Nav.Link as={HashLink} to="/signup" className="link">
-                signup
-              </Nav.Link>
+              {user.displayName ? (
+                <button onClick={logOut} className="btn btn-secondary">
+                  Logout
+                </button>
+              ) : (
+                <Nav.Link as={HashLink} to="/login" className="link">
+                  login
+                </Nav.Link>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>

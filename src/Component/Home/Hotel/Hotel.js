@@ -1,14 +1,15 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
-import { Card, Col, Row } from "react-bootstrap";
+import { Button, Card, Col, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import Rating from "react-rating";
 import "./Hotel.css";
 
 const Hotel = () => {
   const [hotels, setHotels] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/hotels")
+    fetch("https://fierce-everglades-90297.herokuapp.com/hotels")
       .then((res) => res.json())
       .then((data) => setHotels(data));
   }, []);
@@ -57,7 +58,10 @@ const Hotel = () => {
                         {hotel.days} <small>per night</small>{" "}
                       </span>
                       <p>{hotel.discription}</p>
-                      <button className="btn btn-primary">Details</button>
+                      <Link to={"/hotel/rom/book"}>
+                        {" "}
+                        <Button variant="primary">Booking</Button>
+                      </Link>
                     </Card.Body>
                   </Col>
                 </Row>

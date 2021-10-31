@@ -65,7 +65,7 @@ const Contact = () => {
           <br />
           <br />
           <button className="btn btn-primary" type="submit">
-            Submit Now
+            Send Message
           </button>
         </Col>
       </Row>

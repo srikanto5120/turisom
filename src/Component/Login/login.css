@@ -1,0 +1,10 @@
+.google-icon {
+  width: 56px;
+}
+.login {
+  border: 1px solid gray;
+  height: 400px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: rgb(197, 193, 193);
+}

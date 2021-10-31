@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import { Button, Card, Col, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 import "./Tour.css";
 
@@ -45,7 +46,10 @@ const Tour = () => {
 
                   <span className="days">{place.days} days</span>
                   <p>{place.discription}</p>
-                  <Button variant="primary">Bookimg</Button>
+                  <Link to={`/tour/booking/${place._id}`}>
+                    {" "}
+                    <Button variant="primary">Details</Button>
+                  </Link>
                 </Card.Body>
               </Card>
             </Col>
