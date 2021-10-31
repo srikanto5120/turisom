@@ -8,20 +8,16 @@ const BookingInformation = () => {
   const [id, setId] = useState();
   const [userInformation, setUserInformation] = useState([]);
 
-  console.log(id);
   const { register, handleSubmit } = useForm();
   const onSubmit = (data, e) => {
-    fetch(
-      "https://fierce-everglades-90297.herokuapp.com//booking-information",
-      {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify(data),
-      }
-    )
+    console.log(data);
+    fetch("https://fierce-everglades-90297.herokuapp.com/booking-information", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(data),
+    })
       .then((res) => res.json())
       .then((data) => setId(data));
-    e.target.reset();
   };
 
   useEffect(() => {
